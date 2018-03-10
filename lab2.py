@@ -92,12 +92,14 @@ def zad4():
 #zad4()
 
 #start zad 5
-def credits(*args):
-    for i in range(len(args)):
-        printCenter(args[i])
+def credits(*args, **args2):
+    for i in args:
+        printCenter(i)
         time.sleep(1)
+    for element in args2:
+        printCenter(element + ': ' + args2[element])
 
 
 def zad5():
-    credits("raz", "ra", "r")
+    credits("raz", "ra", "r", a="qq", c="dd")
 zad5()
