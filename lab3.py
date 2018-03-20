@@ -32,6 +32,7 @@ def f_3(L):
 def zad3():
     print(f_3([3,1,2,0,4]))
 #zad3()
+
 #zad 4
 def f_4(a, b):
     m = 0
@@ -41,3 +42,39 @@ def f_4(a, b):
 def zad4():
     print(f_4([1,2,3,4, 5, 6, 7, 8], [1,2,3,4, 5]))
 #zad4()
+
+#zad 5
+def f_5(L0, L1):
+    W = [L0[x]/L1[x] for x in range(min(len(L0), len(L1)))]
+    return W
+def zad5():
+    print(f_5([1,2,3,4,5], [1,2,3,4]))
+#zad5()
+
+#zad6
+def f_6(L0):
+    L0.sort()
+    print(L0)
+    W = L0[:3]+L0[-3:]
+    return W
+def zad6():
+    print(f_6([1,25,6,71,21,33,44,0, -1]))
+#zad6()
+
+#zad7
+def f_7(L0):
+    L0 = [L0[x] for x in range(len(L0)) if x % 3 == 0 or L0[x]<0]
+    return L0
+
+def f_7_d(W1):
+    c = len(W1) - 1
+    while c!= 0:
+        if c % 3 == 0 or W1[c]<0:
+            del(W1[c])
+        c = c -1
+    return W1
+
+def zad7():
+    print(f_7([-2, 2,4, 5, 6, 7, 8,-1, -1,-1, 22, 33 , 44, -1, 1]))
+    print(f_7_d([-2, 2, 4, 5, 6, 7, 8, -1, -1, -1, 22, 33, 44, -1, 1]))
+#zad7()
