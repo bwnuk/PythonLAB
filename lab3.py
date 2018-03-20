@@ -78,3 +78,31 @@ def zad7():
     print(f_7([-2, 2,4, 5, 6, 7, 8,-1, -1,-1, 22, 33 , 44, -1, 1]))
     print(f_7_d([-2, 2, 4, 5, 6, 7, 8, -1, -1, -1, 22, 33, 44, -1, 1]))
 #zad7()
+
+#zad8
+def f_8(L0, o):
+    a = [0]
+    W = L0
+    i = 0
+    k = len(W)-1
+
+    while i <= k:
+        if (i+1) % (o+1) == 0:
+            W = W[:i]+a+W[i:]
+            k = k + 1
+        i = i + 1
+    return W
+
+def zad8():
+    print([1,2,3,4,5,6])
+    print(f_8([1, 2, 3, 4, 5, 6, 9 , 9, 9], 3))
+
+#zad8()
+
+#zad9
+def f_9(x):
+    W = [[0 if (i-k) % 2 == 0 else 1 for i in range(x)]for k in range(x)]
+    return W
+def zad9():
+    print(f_9(4))
+zad9()
