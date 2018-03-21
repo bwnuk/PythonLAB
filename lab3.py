@@ -105,4 +105,20 @@ def f_9(x):
     return W
 def zad9():
     print(f_9(4))
-zad9()
+#zad9()
+
+#zad 9000
+def samogloski(T):
+    c = 0
+    for z in T:
+        if z in "aiueoy":
+            c +=1
+    return c
+def f_10(L):
+    Wl = [x for x in L if samogloski(x)% 2 == 0]
+    return Wl
+
+def zad9000():
+    print(f_10(["Robot", "Mech", "Metal Gear"]))
+
+zad9000()
