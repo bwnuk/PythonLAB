@@ -99,6 +99,22 @@ def Wypelnianie(T):
             x = random.randint(0, 9)
             y = random.randint(0, 9)
         T[x][y] = T_OR_F()
+def Strzelanie(T):
+    counter = 20
+    Set = {(99, 99)}
+    while counter >0:
+        x = int(input("Podaj x: "))
+        y = int(input("Podaj y: "))
+        k = x, y
+        T = {k}
+        if Set.issubset(T) == True:
+            counter = counter - 1
+            print("Trafiony")
+            
+        else:
+            print("Juz tam strzelano")
+
+
 def zad7():
     Tabela = [[False for i in range(10)]for j in range(10)]
     for i in range(10):
@@ -107,4 +123,5 @@ def zad7():
     print("")
     for i in range(10):
         print(Tabela[i])
+    Strzelanie(Tabela)
 zad7()
