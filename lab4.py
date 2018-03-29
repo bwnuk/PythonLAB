@@ -69,3 +69,17 @@ def zad5():
 #zad5()
 
 #zad6
+def f(S):
+    W = {}
+    for w in S.keys():
+        if int(S[w]) > 200:
+            W[w] = 'Sen wieczny'
+        elif int(S[w])>0:
+            W[w] = (8/math.log10(int(S[w])))
+    return W
+def f_2(S):
+    #niedziala
+    #w = {' '+key: (8/math.log10(S[key]) if S[key]<=200 else 'Sen wieczny' for key in S.keys() if S[key]>0}
+def zad6():
+    print(f({'Mietek': 23, 'Marcin': 12, 'Zombie': 201, 'Zbyszek': 88}))
+zad6()
