@@ -49,17 +49,23 @@ def f(S):
     for w in S.keys():
         s = 0
         for ww in S[w].keys():
-            s =s+ int(S[w][ww])
+            s = s + int(S[w][ww])
         s = s/3
         if s < 3:
             print(w, S[w])
 def f_2(S, x):
     s = 0
+    i = 0
     for w in S.keys():
         for ww in S[w].keys():
-            if ww != x:
-                print("RAZ")
+            if ww == x:
+                s = s + int(S[w][ww])
+                i = i + 1
+    s = s / i
+    print(s)
 def zad5():
-    #f({'Mietek': {'python': 1, 'odpowiedz ustna': 2, 'lisp': 3}, 'Mirek': {'python': 2, 'odpowiedz ustna': 2, 'lisp': 3},'Marek': {'python': 4, 'odpowiedz ustna': 3, 'lisp': 3}})
+    f({'Mietek': {'python': 1, 'odpowiedz ustna': 2, 'lisp': 3}, 'Mirek': {'python': 2, 'odpowiedz ustna': 2, 'lisp': 3},'Marek': {'python': 4, 'odpowiedz ustna': 3, 'lisp': 3}})
     f_2({'Mietek': {'python': 1, 'odpowiedz ustna': 2, 'lisp': 3}, 'Mirek': {'python': 2, 'odpowiedz ustna': 2, 'lisp': 3},'Marek': {'python': 4, 'odpowiedz ustna': 3, 'lisp': 3}}, 'lisp')
 #zad5()
+
+#zad6
