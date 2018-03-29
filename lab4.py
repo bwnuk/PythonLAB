@@ -77,7 +77,7 @@ def f(S):
         elif int(S[w])>0:
             W[w] = (8/math.log10(int(S[w])))
     return W
-def f_2(S):
+#def f_2(S):
     #niedziala
     #w = {' '+key: (8/math.log10(S[key]) if S[key]<=200 else 'Sen wieczny' for key in S.keys() if S[key]>0}
 def zad6():
