@@ -1,4 +1,5 @@
 import math
+import random
 #zad1
 def sincos(x):
     a = math.sin(math.radians(x)), math.cos(math.radians(x))
@@ -32,7 +33,7 @@ def zad3():
 
 #ZAD4
 def f_al(S):
-    L =  []
+    L = []
     for w in S.keys():
         L.append(w)
     L.sort()
@@ -82,4 +83,28 @@ def f(S):
     #w = {' '+key: (8/math.log10(S[key]) if S[key]<=200 else 'Sen wieczny' for key in S.keys() if S[key]>0}
 def zad6():
     print(f({'Mietek': 23, 'Marcin': 12, 'Zombie': 201, 'Zbyszek': 88}))
-zad6()
+#zad6()
+
+#zad7
+def T_OR_F():
+    if random.randint(1, 2)  == 2:
+        return True
+    else:
+        return False
+def Wypelnianie(T):
+    for i in range(0, 20):
+        x = random.randint(0, 9)
+        y = random.randint(0, 9)
+        while T[x][y] == True:
+            x = random.randint(0, 9)
+            y = random.randint(0, 9)
+        T[x][y] = T_OR_F()
+def zad7():
+    Tabela = [[False for i in range(10)]for j in range(10)]
+    for i in range(10):
+        print(Tabela[i])
+    Wypelnianie(Tabela)
+    print("")
+    for i in range(10):
+        print(Tabela[i])
+zad7()
