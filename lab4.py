@@ -99,18 +99,31 @@ def Wypelnianie(T):
             x = random.randint(0, 9)
             y = random.randint(0, 9)
         T[x][y] = T_OR_F()
-def Strzelanie(T):
+def Strzelanie(Tab):
     counter = 20
-    Set = {(99, 99)}
+    x = int(input("Podaj x: "))
+    y = int(input("Podaj y: "))
+    k = x, y
+    T = {k}
+    Set = {k}
+    if Tab[x][y] == True:
+        counter = counter - 1
+        print("Trafiony")
+    else:
+        print("Pudlo")
     while counter >0:
         x = int(input("Podaj x: "))
         y = int(input("Podaj y: "))
         k = x, y
         T = {k}
-        if Set.issubset(T) == True:
-            counter = counter - 1
-            print("Trafiony")
-            
+        if Set.issubset(T) == False:
+            if Tab[x][y] == True:
+                counter = counter - 1
+                print("Trafiony")
+            else:
+                print("Pudlo")
+
+            Set.add(k)
         else:
             print("Juz tam strzelano")
 
