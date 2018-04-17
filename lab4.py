@@ -1,4 +1,5 @@
 import math
+import time
 import random
 #zad1
 def sincos(x):
@@ -137,4 +138,6 @@ def zad7():
     for i in range(10):
         print(Tabela[i])
     Strzelanie(Tabela)
-zad7()
+#zad7()
+for x, y in [[0.0,0.0],[-0.5,0.9],[1.4,-1.4]]:
+    print(x, y)
