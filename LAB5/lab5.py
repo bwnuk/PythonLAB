@@ -1,27 +1,36 @@
 import text
+import math
 import random
-#ZAD 1
+
+
+# ZAD 1
 def zad1():
     print("ZAD 1")
     text.lewo("MACIEK: ELO ELO")
     text.prawo("JA: DADADADA ANACONDA")
     text.srodkowanie("11.01.2011 19:16")
-zad1()
-#ZAD 2
-#WYWOLAC OSOBNO text2
 
-#ZAD 3
+
+zad1()
+
+
+# ZAD 2
+# WYWOLAC OSOBNO text2
+
+# ZAD 3
 def zad3():
     print("ZAD 3")
-#zad3()
 
-#ZAD4
+
+# zad3()
+
+# ZAD4
 def zad4():
     print("ZAD 4")
-    akto=[]
-    acozrobil=[]
-    ajaki=[]
-    aco=[]
+    akto = []
+    acozrobil = []
+    ajaki = []
+    aco = []
 
     with open('01_kto.txt', 'r') as k:
         for line in k:
@@ -44,9 +53,26 @@ def zad4():
     with open('wynik.txt', 'w') as w:
         for i in range(100):
             w.write("{kto} {co_zrobil} {jaki} {co}".format(
-            kto=random.choice(akto),
-            co_zrobil=random.choice(acozrobil),
-            jaki=random.choice(ajaki),
-            co=random.choice(aco),
+                kto=random.choice(akto),
+                co_zrobil=random.choice(acozrobil),
+                jaki=random.choice(ajaki),
+                co=random.choice(aco),
             ))
-zad4()
+
+
+# zad4()
+
+# ZAD 5
+t = input('Wybierz jezyk')
+if t == 'PL':
+    from polsk import *
+elif t == 'ENG':
+     from angiel import *
+print(lang['hello'])
+print(lang['info'])
+war = int(input())
+if war < 0:
+    print(lang['error'])
+else:
+    print(math.sqrt(var))
+print(lang['bye'])
