@@ -1,0 +1,361 @@
+Strach
+ przycial wesoly
+ oltarz
+Nikt
+ przegral
+ wesoly
+ zadanie
+Majster sztuki
+ zniszcznyl
+ przewrotny
+ plytki
+flisiarz obrocil sie
+ ciekwski
+ zadanie
+Nikt
+ obrocil sie
+ wesoly
+ python
+Krol
+ odegral
+ przewrotny
+ linux
+Nikt
+ obrocil sie
+ dokladny kopyta
+flisiarz zamknal
+ brzydki
+ python
+Strach
+ otworzyl
+ dokladny kopyta
+Sedzia
+ stworzyl
+ kolorowy
+ bazy danychKrol
+ wygral
+ dokladny python
+Jedrzej
+ przycial przewrotny
+ oltarz
+Krolewicz
+ przetworzyl
+ dokladny windows
+Staszek
+ zniszcznyl
+ wesoly
+ kopyta
+Krolewna
+ zniszcznyl
+ ladny
+ zadanie
+Krol
+ magazynowal
+ wesoly
+ system
+Krolewna
+ zamknal
+ przewrotny
+ windows
+Krol
+ zamknal
+ kolorowy
+ python
+Sedzia
+ obrocil sie
+ ciekwski
+ obraz
+Staszek
+ przycial ciekwski
+ linux
+Dynia
+ zamknal
+ kolorowy
+ zadanie
+Nikt
+ stworzyl
+ przewrotny
+ bazy danychStaszek
+ zniszcznyl
+ ladny
+ system
+Nikt
+ stworzyl
+ smutny
+ plytki
+Jedrzej
+ otworzyl
+ wesoly
+ obraz
+Nikt
+ magazynowal
+ ciekwski
+ plytki
+Majster sztuki
+ przetworzyl
+ ciekwski
+ linux
+Majster sztuki
+ przetworzyl
+ ladny
+ obraz
+Krol
+ stworzyl
+ ciekwski
+ bazy danychSedzia
+ stworzyl
+ wesoly
+ plytki
+flisiarz przetworzyl
+ smutny
+ windows
+Nikt
+ otworzyl
+ kolorowy
+ obraz
+Nikt
+ przetworzyl
+ wesoly
+ python
+Majster sztuki
+ magazynowal
+ ladny
+ plytki
+Krolewna
+ zniszcznyl
+ wesoly
+ windows
+Krol
+ zamknal
+ ladny
+ linux
+Strach
+ odegral
+ wesoly
+ zadanie
+flisiarz odegral
+ brzydki
+ kopyta
+Staszek
+ przegral
+ brzydki
+ python
+Nikt
+ zniszcznyl
+ ladny
+ python
+Majster sztuki
+ obrocil sie
+ ladny
+ system
+flisiarz stworzyl
+ przewrotny
+ linux
+Krolewicz
+ przycial smutny
+ bazy danychflisiarz stworzyl
+ ciekwski
+ oltarz
+Krol
+ magazynowal
+ kolorowy
+ system
+Sedzia
+ odegral
+ smutny
+ bazy danychNikt
+ odegral
+ smutny
+ zadanie
+Krolewna
+ odegral
+ kolorowy
+ zadanie
+Nikt
+ otworzyl
+ ciekwski
+ obraz
+Nikt
+ otworzyl
+ dokladny kopyta
+Krolewna
+ odwtworzyl
+ smutny
+ oltarz
+flisiarz przetworzyl
+ przewrotny
+ linux
+Krol
+ przetworzyl
+ przewrotny
+ kopyta
+Nikt
+ przetworzyl
+ brzydki
+ linux
+Krol
+ przycial ladny
+ plytki
+Krolewicz
+ odwtworzyl
+ dokladny zadanie
+Dynia
+ obrocil sie
+ kolorowy
+ bazy danychMajster sztuki
+ wygral
+ ladny
+ kopyta
+Strach
+ odegral
+ wesoly
+ plytki
+Nikt
+ przetworzyl
+ kolorowy
+ python
+Krolewna
+ otworzyl
+ przewrotny
+ zadanie
+flisiarz odegral
+ dokladny linux
+Strach
+ wygral
+ ladny
+ system
+Krolewna
+ zamknal
+ brzydki
+ linux
+Dynia
+ przetworzyl
+ brzydki
+ oltarz
+Krol
+ odwtworzyl
+ wesoly
+ bazy danychSedzia
+ zniszcznyl
+ smutny
+ plytki
+Krol
+ wygral
+ przewrotny
+ zadanie
+Krol
+ przycial wesoly
+ windows
+Strach
+ przegral
+ dokladny plytki
+Krol
+ stworzyl
+ przewrotny
+ bazy danychKrolewna
+ stworzyl
+ kolorowy
+ windows
+Nikt
+ magazynowal
+ dokladny plytki
+Dynia
+ otworzyl
+ brzydki
+ system
+Krolewna
+ magazynowal
+ brzydki
+ python
+Jedrzej
+ magazynowal
+ kolorowy
+ python
+Krolewna
+ otworzyl
+ ladny
+ bazy danychNikt
+ wygral
+ wesoly
+ obraz
+Strach
+ wygral
+ ciekwski
+ windows
+Majster sztuki
+ zniszcznyl
+ ciekwski
+ system
+Staszek
+ odegral
+ smutny
+ kopyta
+Krolewicz
+ przegral
+ kolorowy
+ system
+Dynia
+ otworzyl
+ brzydki
+ kopyta
+Strach
+ odwtworzyl
+ ladny
+ bazy danychNikt
+ przegral
+ brzydki
+ linux
+Nikt
+ otworzyl
+ kolorowy
+ windows
+Dynia
+ zamknal
+ ladny
+ zadanie
+Staszek
+ przegral
+ brzydki
+ bazy danychSedzia
+ przetworzyl
+ smutny
+ linux
+Dynia
+ otworzyl
+ brzydki
+ plytki
+Dynia
+ zamknal
+ przewrotny
+ zadanie
+Dynia
+ przycial wesoly
+ system
+Strach
+ zamknal
+ ciekwski
+ python
+Sedzia
+ stworzyl
+ ladny
+ oltarz
+Krolewna
+ wygral
+ ladny
+ zadanie
+Krolewna
+ obrocil sie
+ dokladny oltarz
+Jedrzej
+ magazynowal
+ ciekwski
+ zadanie
+flisiarz odwtworzyl
+ ladny
+ zadanie
+Staszek
+ magazynowal
+ brzydki
+ kopyta
+Dynia
+ przycial dokladny obraz
