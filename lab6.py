@@ -1,40 +1,72 @@
 #zad1
 class Moneta:
-    def __init__(self, wartosc):
+
+    def __init__(self, wartosc, W):
+        self.__waluta = W
         if wartosc in [1, 2, 5, 10, 20, 50, 100, 200, 500] != False:
             self.__wartosc = wartosc
         else:
             print("Nie ma takiego nominalu! Zacznynamy 1 to 1 grosz")
+
     def GetWartosc(self):
         return self.__wartosc
+    def GetWaluta(self):
+        return self.__waluta
+
 def zad1():
     jeden = Moneta(1)
     print(jeden.GetWartosc())
     niema = Moneta(7)
 #zad1()
 
+#zad3klasa
+class PrzechowywaczMonet:
+
+    def __init__(self, L):
+        self.__Lista = L
+        self.__monety = []
+
+    def Dodaj(self, X):
+        self.__monety.append(X)
+
+    def Ilosc(self):
+        return len(self.__monety)
+
+    def Zwracanie(self, X):
+        for x in self.__monety:
+            if x.GetWartosc() == X:
+                t = x
+                return t
+
 #zad2
 
-class Skarbonka:
-    def __init__(self):
+class Skarbonka(PrzechowywaczMonet):
+    def __init__(self, W):
+        self.__waluta = W
         self.lista = []
+
     def DodajMonete(self, X):
         if isinstance(X, Moneta):
-            self.lista.append(X)
+            if X.GetWaluta() == self.__waluta:
+                self.lista.append(X)
+            else:
+                print("Nieznana moneta")
         else:
             print("Przeslany obiekt nie jest moneta")
+
     def GetSuma(self):
         s = 0
         for i in self.lista:
             s = s + int(i.GetWartosc())
         return s
-def zad2():
-    jeden = Moneta(1)
-    dwa = Moneta(2)
-    piec = Moneta(5)
 
-    S = Skarbonka()
-    S1 = Skarbonka()
+def zad2():
+    jeden = Moneta(1, "PLN")
+    dwa = Moneta(2, "PLN")
+    piec = Moneta(5, "EURO")
+
+    S = Skarbonka("PLN")
+    S1 = Skarbonka("PLN")
 
     S.DodajMonete(jeden)
     S.DodajMonete(dwa)
@@ -45,5 +77,21 @@ def zad2():
     S1.DodajMonete(dwa)
     S1.DodajMonete(piec)
     print(S1.GetSuma())
-#zad2()
+zad2()
 
+#zad3
+def zad3():
+    P = PrzechowywaczMonet([1, 2, 5, 10, 20, 50, 100, 200, 500])
+    jeden = Moneta(1)
+    dwa = Moneta(2)
+    piec = Moneta(5)
+
+    P.Dodaj(jeden)
+    print(P.Ilosc())
+    P.Dodaj(dwa)
+    P.Dodaj(piec)
+    print(P.Ilosc())
+
+    print(P.Zwracanie(1).GetWartosc())
+
+#zad3()
