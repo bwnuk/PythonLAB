@@ -45,4 +45,5 @@ def zad2():
     S1.DodajMonete(dwa)
     S1.DodajMonete(piec)
     print(S1.GetSuma())
-zad2()
+#zad2()
+
