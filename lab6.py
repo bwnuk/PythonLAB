@@ -1,12 +1,17 @@
 #zad1
+#zad4
 class Moneta:
 
     def __init__(self, wartosc, W):
         self.__waluta = W
-        if wartosc in [1, 2, 5, 10, 20, 50, 100, 200, 500] != False:
+        if wartosc in [1, 2, 5, 10, 20, 50, 100, 200, 500]:
             self.__wartosc = wartosc
         else:
             print("Nie ma takiego nominalu! Zacznynamy 1 to 1 grosz")
+        if W in ['PLN', 'EUR', 'GP', '$']:
+            self.__waluta = W
+        else:
+            print("Nie ma takiej dostepnej waluty")
 
     def GetWartosc(self):
         return self.__wartosc
@@ -35,15 +40,15 @@ class PrzechowywaczMonet:
     def Zwracanie(self, X):
         for x in self.__monety:
             if x.GetWartosc() == X:
-                t = x
-                return t
+                return self.__monety(x)
 
 #zad2
 
 class Skarbonka(PrzechowywaczMonet):
-    def __init__(self, W):
+    def __init__(self, W, L):
+        PrzechowywaczMonet.__init__(L)
         self.__waluta = W
-        self.lista = []
+        self.__lista = []
 
     def DodajMonete(self, X):
         if isinstance(X, Moneta):
@@ -59,6 +64,10 @@ class Skarbonka(PrzechowywaczMonet):
         for i in self.lista:
             s = s + int(i.GetWartosc())
         return s
+
+    def Zwracanie(self, X):
+        if self.Ilosc() < 2:
+            print("Nie mozna wyciagnac pojedyneczej monety")
 
 def zad2():
     jeden = Moneta(1, "PLN")
